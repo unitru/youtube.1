@@ -1,0 +1,246 @@
+
+.container {
+    display: flex;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #0f0f0f;
+    padding: 20px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-card .title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.video-card .details {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.video-card .time {
+    position: absolute;
+    top: 220px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #808080;
+    width: auto;
+    height: 35px;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    cursor: pointer;
+    position:relative;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 10px;
+    padding-left: 20%;
+}
+
+.logo {
+    width: 100px;
+}
+
+
+.header-buttons {
+    display: flex;
+    margin-left: 300px;
+    align-items:center;
+}
+
+.header-button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header-button img {
+    width: 40px;
+}
+
+.sidebar-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-inline-start: 20px;
+    padding-top: 5px;
+}
+
+.sidebar-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+
+.subscriptions-list {
+    margin-top: 20px;
+}
+
+.subscriptions-list li {
+    margin-bottom: 5px;
+}
+
+.subscriptions-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.subscriptions-list li a:hover {
+    text-decoration: underline;
+}
+
+.imagen1{
+    width: 25px;
+    height: 25px;
+}
+
+
+.logo{
+    width: 125px;
+    height: 40px;
+}
+
+.barra{
+    display: flex;
+}
+
+
+body {
+    background-color:#0F0F0F; 
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: 1px solid  #4d4c4c;
+    border-radius: 20px;
+    outline: none;
+    color:white;
+    font-size: 1rem;
+    padding: 7.5px;
+    width: 550px;
+}
+
+.search-bar button {
+    background-color: #212121; 
+    position: absolute;
+    border: 1px solid  #4d4c4c;
+    border-radius: 0 20px 20px 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.search-bar button svg {
+    fill: none;
+    stroke: white;
+    width: 45px;
+    height: 25px;
+}
+
+.filter-menu {
+    gap: 10px;
+    padding: 5px 6px 10px;
+}
+
+.filter-button {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.filter-button.active {
+    background-color: #FFFFFF;
+    color: #000000; 
+}
+
+.filter-button:hover {
+    background-color: #444444;
+}
+
+.views{
+    font-size: 12px;
+}
+
+.date{
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
